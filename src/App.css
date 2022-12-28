@@ -1,0 +1,130 @@
+.App {
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+}
+
+body {
+  background-image: url(../src/assets/bg.png);
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+.Home{
+  width: 100%;
+  height: 100vh;
+}
+
+.navBar{
+  width:100%;
+  height: 95px;
+}
+
+.navBarComponent{
+  margin-left: -100px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center; 
+  justify-content: center;
+  justify-items: center;
+}
+
+.navBarLogo{
+  z-index: +1;
+  vertical-align: middle;
+  width: 120px;
+}
+
+
+.Footer{
+  position: absolute;
+  width: 100%;
+  bottom: 50px;
+}
+.bgTextLogo{
+  position: relative;
+  text-align:center; 
+  width: 100%;
+  margin-top: 10px !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.loginBodyLogo{
+  width: 450px;
+}
+
+.loginBodyText{
+  width: 450px;
+  margin-left: 0px !important;
+}
+
+.connectBtn{
+  width: 200px;
+  cursor: pointer !important;
+}
+
+.disconnectBtn{
+  cursor: pointer;
+    width:160px;
+    position:absolute;
+    top:15px;
+    right:-80px
+}
+
+.disconnectBtnResponsive{
+  display: none;
+}
+
+.sliderDiv{
+  margin-top: 10px;
+  width: 100%;
+}
+
+@font-face {
+  font-family: myFont;
+  src: url(./font/MokotoGlitch.ttf);
+}
+
+@media only screen and (max-width: 700px){
+  .bgTextLogo{
+    display: block;
+  }
+
+  .bgTextLogo{
+    margin-top: 25px !important;
+  }
+
+  .loginBodyText{
+    width: 300px;
+  }
+
+  .loginBodyLogo{
+    width: 300px;
+  }
+
+  .disconnectBtn{
+    display: none;
+  }
+  .disconnectBtnResponsive{
+    display:block;
+    width: 150px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+@media only screen and (max-width: 950px){
+  .loginBodyText{
+    width: 300px;
+  }
+
+  .loginBodyLogo{
+    width: 300px;
+  }
+}
